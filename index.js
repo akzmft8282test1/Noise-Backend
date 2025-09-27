@@ -4,7 +4,7 @@ const express = require("express");
 const { createClient } = require("@supabase/supabase-js");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 // Supabase 클라이언트 설정
 const supabaseUrl = process.env.SUPABASE_URL;
@@ -42,6 +42,6 @@ app.get("/", (req, res) => {
 });
 
 // 서버 시작
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`서버가 포트 ${port}에서 실행되고 있습니다.`);
 });
