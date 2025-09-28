@@ -7,6 +7,7 @@ requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
 
 [nix]
 channel = "stable-24_11"
+packages = ["rubyPackages_3_4.cocoapods"]
 
 [deployment]
 run = ["node", "index.js"]
